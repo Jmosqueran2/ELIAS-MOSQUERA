@@ -1,0 +1,210 @@
+Funcion  deber_1
+	//Dado a=3 y b=7, encuentra el valor de y = 2 * a + b - a mod 3. 
+	//solucion del ejercicio que se nos pide.
+	// Se busca definir las variables como enteros
+	//y=2*a+b-a mod 3
+	//y=6+7
+	//y=13
+		Definir a, b, c Como entero
+		a = 3
+		b = 7
+		c = 2 * a + b - a mod 3
+		Escribir c
+FinFuncion
+
+
+Funcion deber_2
+	//Si a=10 y b=4, calcula el valor de z = a * b + 3 mod a + b. 
+	//solucion del segundo ejercicio.
+	//z=a*b+3 mod a+b
+	//z=4+3=7
+	//z=10*4=40
+	//z=40+7
+	//=47
+	Definir a, b, z Como Entero
+	a = 10
+	b = 4
+	z = a * b + 3 mod a + b
+	Escribir z
+FinFuncion
+
+Funcion deber_3
+	//Con a=6 y b=2, determina el valor de w = a - b + 2 * a mod b
+	//Buscamos definir las variables (a, b, w) como entero
+	//procedemos a escribir la expresion matematica
+	//con el comando (escribir) se puede ejecutar el resultado especifico
+	// el valor de este ejercicio es 4
+	Definir a, b, w Como Entero
+	a = 6
+	b = 2
+	w = a - b + 2 * a mod b
+	Escribir w
+FinFuncion
+
+Funcion deber_4
+	//Para a=8 y b=5, encuentra el valor de v = 2 * b + a div 2 + 4 * b mod a. 
+	// para obtener el valor de la variable v hacemos lo siguiente
+	// procedemos a definir las variables como enteros (a,b,v)
+	// El valor de la variable v es 18
+	Definir a, b, v Como Entero
+	a = 8
+	b = 5
+	v = 2 * b + a / 2 + 4 * b mod a
+	Escribir v
+FinFuncion
+
+Funcion deber_5
+	//Si a=12 y b=9, calcula el valor de u = b - a + 3 * a mod b.
+	//sabemos que nos dan el valor de dos variables y una expresion matematicas
+	//Definimos las variable como entero 
+	//Le pedimos al comando (escribir) para que nos ayude a calcular el resultado.
+	//ejecutamos el problema para obtener el resultado
+	definir a , b , resultado como entero 
+	a <- 12 
+	b <- 9 
+	escribir "i a=12 y b=9, calcula el valor de U si U= b - a + 3 * a mod b.";
+	resultado = b - a + 3 * a mod b
+	escribir 9 "-" 12 "+" 3 "*" 12 "mod" 9 
+	escribir "U = " resultado ; 
+	
+FinFuncion
+Funcion deber_6
+	// orden de procedencia:  (), ^ *, / mod div, + -
+	// del mismo nivel se resuelve de izquierda a derecha
+	// resolver el siguiente ejercicio matematico 
+	// (5 + 3 * 2) + 9 > 3 * 5 * 14 % 3
+	//  11 + 9 >  0 
+	// 20 > 0 
+	definir c1, c2 como entero 
+	a = 5 ;
+	b = 3;
+	c = 2 ; 
+	d = 9;  
+	e = 14 ; 
+	escribir "resolverla siguientes operaciones y realice la comparacion" 
+	escribir " (5 + 3  * 2) + 9 ) > (3 * 5 * 14 % 3)"
+	c1 = ( a + b * c) + d
+	escribir " el primer resultado es ", c1;
+	c2 = b * a * e %b  
+	escribir " el segundo resultado es " , c2; 
+	escribir "determina verdadero o falso si "   c1 "es mayor que"  c2 ;
+	si c1 > c2 entonces 
+		escribir "verdadero " c1 "es mayor que " c2 ;
+	sino 
+		escribir "falso " c1 " no es mayor que" c2 ;
+	FinSi
+	
+FinFuncion
+Funcion deber_7
+		// orden de operadores:  (), ^ *, / mod div, + -
+		// resolver de izquierda a derecha 
+		// del mismo modo se resuelve de izquierda a derecha
+		// resolver la siguiente expresion matematico
+		// 2 (4 - 10 + 8)/2 36 *(1/2)
+		// 2 *  36 (1/2)
+		// 72 * 0.5
+		//36 
+		definir num1 , num2 , num3 , num4 , num5 , num6 , resultado Como Real
+		num1 <- 2
+		num2 <- 4 
+		num3 <- 10 
+		num4 <- 8
+		num5 <- 36 
+		num6 <- 1
+		escribir "cual es el resultado de 2 (4 - 10 + 8)/2 36 *(1/2)";
+		resultado = num1 * ( num2 - num3 + num4 ) /num1 * num5 * (num6/num1)
+		escribir "el resultado es ", resultado;
+		
+FinFuncion
+Funcion deber_8
+	// orden de operadores:  (), ^ *, / mod div, + -
+	// resolver de izquierda a derecha 
+	// resolver la siguiente expresion matematica 
+	// 260 / 12 + 54 % 3 - 85 % 7
+	// 21.66 + 0  - 1
+	// 20.666
+	definir num1, num2 , num3 ,num4 , num5  , num6 ,resultado como real
+	num1 <- 260 
+	num2 <- 12 
+	num3 <- 54 
+	num4 <- 3 
+	num5 <- 85
+	num6<- 7
+	escribir "resolver el siguiente ecuacion , 260 / 12 + 54 % 3 - 85 % 7 "; 
+	resultado = num1 / num2 + num3 % num4 - num5 % num6 
+	escribir "el resultado de la ecuacion es  ", resultado;
+	
+FinFuncion
+Funcion deber_9
+	//orden de operadores:  (), ^ *, / mod div, + -
+	// resolver la siguiente expresion matematica 
+	// resolver de izquierda a derecha 
+	// (48 < 2 * 3) | | (2 * 7 < 12)
+	// 48 < 6  
+	//  falso 48 no es menor que 6 
+	// segunda ejercicico  del problema 
+	// (2 * 7 < 12)
+	// 14 < 12
+	// falso 14 no es menor que 12 
+	definir num1, num2 , num3 ,num4 , num5  ,resultado, resultado2  Como Entero
+	num1 <- 48
+	num2 <- 2
+	num3 <- 3
+	num4 <- 7
+	num5 <- 12
+	escribir "resolver el siguientes ecuacion (48 < 2 * 3) | | (2 * 7 < 12 )";
+	resultado = num2 * num3 
+	Si num1 < resultado  Entonces
+		escribir "si es menor que ", resultado;
+	SiNo
+		escribir num1 " no es menor a " , resultado ;
+	Fin Si
+	
+	resultado2 = num2 * num4 
+	Si num5 < resultado2 Entonces
+		escribir num5 " es menor a "  , resultado2
+		
+	SiNo
+		escribir num5  " no es menor a " resultado2
+	Fin Si
+FinFuncion
+Funcion deber_10
+	//orden de OPERADORES:  (), ^ *, / mod div, + -
+	//  resolver de izquierda a derecha 
+	// resolver la siguiente expresion matematica 
+	// ((8 > 2) | | (932 < 23) ) && 4 == 2
+	definir resp Como Logico
+	resp = ((8>2) | (932<23))& 4==2
+	
+	Si rsp Entonces
+		Escribir "la expresion es verdadera"
+	SiNo
+		escribir "la expresion es falsa"
+	Fin Si
+FinFuncion
+
+algoritmo tarea 
+	deber_1 
+	escribir ""
+	deber_2
+	escribir ""
+	deber_3
+	escribir""
+	deber_4 
+	escribir""
+	deber_5
+	escribir""
+	deber_6
+	escribir"" 
+	deber_7
+	escribir""
+	deber_8
+	escribir ""
+	deber_9
+	escribir ""
+	deber_10
+	escribir ""
+FinAlgoritmo
+
+
+
